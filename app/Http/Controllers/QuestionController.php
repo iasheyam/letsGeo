@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Feature;
+use App\Models\Place;
 use Illuminate\Http\Request;
 
 class QuestionController extends Controller
@@ -12,18 +13,16 @@ class QuestionController extends Controller
         $user = auth()->user();
         $features = Feature::all();
 
-        return view('questions.index', compact('user','features'));
+        return view('questions.index', compact('user', 'features'));
     }
 
     public function store(Request $request)
     {
-
-
         $user = auth()->user();
 
         $user->types()->sync($request->types);
 
-        return redirect()->route('questions.index');
+        return redirect()->route('dashboard');
     }
 
     public function preferences()
@@ -32,16 +31,9 @@ class QuestionController extends Controller
 
         $types = $user->types;
 
-        $features = $user->types->load('features')->pluck('features')->flatten()->unique('id')->values();
+        $features = $this->getFeaturesAndTypes($user, $types);
 
-        // for each feature, get the types that match the user's types save in $types
-        $features->map(function ($feature) use ($types) {
-            $feature->types = $types->filter(function ($type) use ($feature) {
-                return $type->features->contains($feature);
-            });
-        });
-
-        return view('questions.preferences', compact('user','types','features'));
+        return view('questions.preferences', compact('user', 'types', 'features'));
     }
 
     public function suggestedPlaces()
@@ -56,6 +48,50 @@ class QuestionController extends Controller
             $place->typeCount = $place->types->intersect($types)->count();
             return $place->typeCount;
         });
-        return view('dashboard', compact('user','places'));
+        return view('dashboard', compact('user', 'places'));
+    }
+
+    public function showPlace($id)
+    {
+        $user = auth()->user();
+        $place = Place::find($id)->load('types.features');
+        $features = $place->types->pluck('features')->flatten()->unique('id')->values()->sortBy('name');
+        // get place types that match user types
+        $matchedTypes = $place->types->intersect($user->types);
+        $matchedFeatures = $this->getFeaturesAndTypes($user, $matchedTypes)->sortBy('name');
+        // remove matched features if its type is empty
+        $matchedFeatures = $matchedFeatures->filter(function ($feature) {
+            return $feature->types->count() > 0;
+        });
+
+        $otherUsers = $place->users->where('id', '!=', $user->id)->values();
+
+        return view('questions.place', compact('user', 'place', 'features', 'matchedFeatures', 'otherUsers'));
+    }
+
+    /**
+     * @param \Illuminate\Contracts\Auth\Authenticatable|null $user
+     * @param $types
+     * @return mixed
+     */
+    public function getFeaturesAndTypes(?\Illuminate\Contracts\Auth\Authenticatable $user, $types)
+    {
+        $features = $user->types->load('features')->pluck('features')->flatten()->unique('id')->values();
+
+        // for each feature, get the types that match the user's types save in $types
+        $features->map(function ($feature) use ($types) {
+            $feature->types = $types->filter(function ($type) use ($feature) {
+                return $type->features->contains($feature);
+            });
+        });
+        return $features;
+    }
+
+    public function going($id)
+    {
+        $user = auth()->user();
+        $place = Place::find($id);
+        $user->places()->syncWithoutDetaching($place);
+        return redirect()->route('place.show', $place);
     }
 }

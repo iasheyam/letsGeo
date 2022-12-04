@@ -20,6 +20,9 @@
 
     <div class="d-flex flex-column max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div class="border border-white border-3 p-5 my-5 text-white text-center">
+            <div class="bg-white mb-4" width="200" height="200">
+                <img src="{{ asset('images/logo.png') }}" alt="logo" width="200" height="200">
+            </div>
             <h1>Welcome to <span class="fw-bold">LetsGeo</span></h1>
             <p>Learning geology is more about the practical experience than just reading books.
                 Lets
@@ -47,6 +50,7 @@
             </p>
             <p class="fs-6 mb-0">For GLG 101: Intro to Geology I (Physical) final project. Professor: Darryl Reano.</p>
             <span class="fs-6 fw-lighter fst-italic text-justify">This website is for academic purposes only. It doesn't maintain any data protection policy. I will not sell your data and try my best to secure your data. By using this website you take full responsibility of your data used in this website.</span>
+            <br><span class="fs-6 fw-lighter fst-italic text-justify"><a href="https://www.flaticon.com/free-icons/geology" target="_blank" title="geology icons"> Logo Geology icons created by dDara - Flaticon</a></span>
         </div>
 
     </div>

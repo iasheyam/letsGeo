@@ -46,4 +46,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Type::class, 'user_type')->withTimestamps();
     }
+
+    public function places(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    {
+        return $this->belongsToMany(Place::class, 'place_user')->withTimestamps();
+    }
 }
