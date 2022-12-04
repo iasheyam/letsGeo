@@ -5,6 +5,12 @@
                 <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
             </a>
         </x-slot>
+        <div class="my-3 text-center">
+            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+               href="{{ route('login') }}">
+                Already have an account? Login
+            </a>
+        </div>
 
         <form method="POST" action="{{ route('register') }}">
             @csrf

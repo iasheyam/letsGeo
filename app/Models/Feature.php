@@ -14,7 +14,7 @@ class Feature extends Model
         'description',
     ];
 
-    public function types()
+    public function types(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
         return $this->belongsToMany(Type::class)->withTimestamps();
     }
