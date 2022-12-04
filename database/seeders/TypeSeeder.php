@@ -54,6 +54,34 @@ class TypeSeeder extends Seeder
                 'name' => 'Amargosa',
                 'source' => 'https://www.blm.gov/programs/national-conservation-lands/california/amargosa-wsr'
             ],
+            [
+                'name' => 'Amphibole',
+                'source' => 'http://npshistory.com/brochures/grsa/geology1.pdf'
+            ],
+            [
+                'name' => 'Ancient Fossils',
+                'source' => 'https://www.nps.gov/grca/learn/nature/fossils.htm#:~:text=The%20sedimentary%20rocks%20exposed%20throughout,scorpions%2C%20centipedes%2C%20and%20reptiles'
+            ],
+            [
+                'name' => 'Antimony',
+                'source' => 'https://www.nps.gov/deva/learn/nature/mining-in-death-valley.htm#:~:text=Prospectors%20including%20Shorty%20Harris%20and,supported%20them%20became%20ghost%20towns'
+            ],
+            [
+                'name' => 'Beartooth',
+                'source' => 'https://www.yellowstoneparknet.com/mountains/'
+            ],
+            [
+                'name' => 'Being Shaped By Shifts Of Its Tectonic Plate, The Pacific Plate.',
+                'source' => 'https://education.nationalgeographic.org/resource/chain-islands-hawaiian-hot-spot'
+            ],
+            [
+                'name' => 'Big Thompson',
+                'source' => 'https://www.nps.gov/romo/rushing_streams_roaring_waterfalls.htm#:~:text=The%20headwaters%20of%20major%20rivers,raging%20streams%20and%20thundering%20waterfalls!'
+            ],
+            [
+                'name' => 'Biotite',
+                'source' => 'https://www.nps.gov/romo/rushing_streams_roaring_waterfalls.htm#:~:text=The%20headwaters%20of%20major%20rivers,raging%20streams%20and%20thundering%20waterfalls!'
+            ],
 
             //Birch	https://www.nps.gov/glac/learn/education/continental_divide.htm
             //Bivalves	http://geology.teacherfriendlyguide.org/index.php/fossils-intro-nc/fossils-region3-nc#:~:text=In%20addition%2C%20a%20variety%20of,%2C%20leaves%2C%20and%20freshwater%20clams.
@@ -69,7 +97,7 @@ class TypeSeeder extends Seeder
             //Copper	https://explorethecanyon.com/geology-of-the-grand-canyon/
             //Crater lakes	https://www.nps.gov/articles/000/crater-lakes.htm
             [
-                'name' => 'Brich',
+                'name' => 'Birch',
                 'source' => 'https://www.nps.gov/glac/learn/education/continental_divide.htm',
             ],
             [
@@ -230,7 +258,6 @@ class TypeSeeder extends Seeder
             //Helena	https://www.nps.gov/glac/learn/nature/geologicformations.htm
             //High Elevation	https://www.nps.gov/grsa/planyourvisit/safety.htm
             //Hot Sand	https://www.nps.gov/grsa/planyourvisit/safety.htm
-            //Hot Springs	https://peakvisor.com/park/hot-springs-national-park.html
             //Hot Springs 	https://www.usgs.gov/geology-and-ecology-of-national-parks/hot-springs-national-park
             //Human Footprints In Volcanic Ash	https://www.nps.gov/havo/learn/news/20150915_pr_programs.htm#:~:text=Fossil%20History%20of%20Hawai'i.&text=Although%20Hawai'i%20didn't,trees%20entombed%20by%20lava%20flows.
             //Hydrothermal Explosions	https://www.usgs.gov/observatories/yvo/news/real-hazards-yellowstone
@@ -266,10 +293,6 @@ class TypeSeeder extends Seeder
             [
                 'name' => 'Hot Sand',
                 'source' => 'https://www.nps.gov/grsa/planyourvisit/safety.htm'
-            ],
-            [
-                'name' => 'Hot Springs',
-                'source' => 'https://peakvisor.com/park/hot-springs-national-park.html'
             ],
             [
                 'name' => 'Hot Springs',
@@ -504,7 +527,7 @@ class TypeSeeder extends Seeder
                 'source' => 'https://peakvisor.com/range/livingston-range.html'
             ],
             [
-                'name' => 'Mount Cleveland - Highest',
+                'name' => 'Mount Cleveland  - Highest',
                 'source' => 'https://www.nps.gov/glac/learn/nature/mountains.htm'
             ],
             [
@@ -665,8 +688,7 @@ class TypeSeeder extends Seeder
 
             //Shark Teeth Fossils	http://geology.teacherfriendlyguide.org/index.php/fossils-intro-nc/fossils-region3-nc#:~:text=In%20addition%2C%20a%20variety%20of,%2C%20leaves%2C%20and%20freshwater%20clams.
             //Shepard	https://www.nps.gov/glac/learn/nature/geologicformations.htm
-            //Silica	https://www.nps.gov/hosp/learn/nature/hotsprings.htm
-            //Silica And , 	http://larryeifert.com/craterlakefoundation.org/library/nature-notes/vol17-rocks-crater-lake.htm#:~:text=Most%20of%20the%20rock%20in,in%20color%2C%20sometimes%20almost%20black.
+            //Silica 	http://larryeifert.com/craterlakefoundation.org/library/nature-notes/vol17-rocks-crater-lake.htm#:~:text=Most%20of%20the%20rock%20in,in%20color%2C%20sometimes%20almost%20black.
             //Silver	https://explorethecanyon.com/geology-of-the-grand-canyon/
             //Sits On The Boundary Between Two Of The Earth'S Major Crustal	https://www.nps.gov/glba/learn/kidsyouth/geology-of-glacier-bay-national-park.htm#:~:text=Glacier%20Bay%20National%20Park%20sits,the%20continental%20North%20American%20Plate.
             //Snake River	https://www.nps.gov/yell/learn/nature/water.htm
@@ -681,10 +703,6 @@ class TypeSeeder extends Seeder
             ],
             [
                 'name' => 'Silica',
-                'source' => 'https://www.nps.gov/hosp/learn/nature/hotsprings.htm'
-            ],
-            [
-                'name' => 'Silica And ,',
                 'source' => 'http://larryeifert.com/craterlakefoundation.org/library/nature-notes/vol17-rocks-crater-lake.htm#:~:text=Most%20of%20the%20rock%20in,in%20color%2C%20sometimes%20almost%20black.'
             ],
             [
@@ -740,7 +758,6 @@ class TypeSeeder extends Seeder
             //Summers - very hot	https://www.climatestotravel.com/climate/united-states/death-valley
             //Summers - warm	https://www.nps.gov/wica/planyourvisit/weather.htm#:~:text=Generally%2C%20the%20climate%20is%20semi,because%20of%20two%20weather%20patterns.
             //Summers - warm and dry	https://weatherspark.com/y/150322/Average-Weather-in-Great-Sand-Dunes-National-Park-Colorado-United-States-Year-Round
-            //Summers - warm, dry, and mostly clear  	https://weatherspark.com/y/2486/Average-Weather-in-Grand-Canyon-Arizona-United-States-Year-Round#:~:text=In%20Grand%20Canyon%2C%20the%20summers,or%20above%2091%C2%B0F.
             [
                 'name' => 'Summers - short, comfortable, dry, mostly clear.',
                 'source' => 'https://weatherspark.com/y/150294/Average-Weather-in-Yellowstone-National-Park-Wyoming-United-States-Year-Round#:~:text=In%20Yellowstone%20National%20Park%2C%20the,or%20above%2084%C2%B0F.'
@@ -761,15 +778,15 @@ class TypeSeeder extends Seeder
                 'name' => 'Summers - warm and dry',
                 'source' => 'https://weatherspark.com/y/150322/Average-Weather-in-Great-Sand-Dunes-National-Park-Colorado-United-States-Year-Round'
             ],
-            [
-                'name' => 'Summers - warm, dry, and mostly clear',
-                'source' => 'https://weatherspark.com/y/2486/Average-Weather-in-Grand-Canyon-Arizona-United-States-Year-Round#:~:text=In%20Grand%20Canyon%2C%20the%20summers,or%20above%2091%C2%B0F.'
-            ],
-            //Summers -warm, dry, and mostly clear 	https://weatherspark.com/y/150311/Average-Weather-in-Crater-Lake-National-Park-Oregon-United-States-Year-Round#:~:text=In%20Crater%20Lake%20National%20Park%2C%20the%20summers%20are%20warm%2C%20dry,or%20above%2094%C2%B0F.
+            //Summers - warm, dry, and mostly clear 	https://weatherspark.com/y/150311/Average-Weather-in-Crater-Lake-National-Park-Oregon-United-States-Year-Round#:~:text=In%20Crater%20Lake%20National%20Park%2C%20the%20summers%20are%20warm%2C%20dry,or%20above%2094%C2%B0F.
             //Tectonic Hotspot.	https://homework.study.com/explanation/what-is-the-plate-tectonic-setting-of-yellowstone-national-park.html#:~:text=The%20plate%20tectonic%20setting%20of%20Yellowstone%20National%20Park%20is%20a,it%2C%20creating%20a%20magma%20plume.
             //Telescope Peak - Highest	https://www.britannica.com/place/Death-Valley
             //Terrestrial Fossils	https://www.nps.gov/grca/learn/nature/fossils.htm#:~:text=The%20sedimentary%20rocks%20exposed%20throughout,scorpions%2C%20centipedes%2C%20and%20reptiles.
             //The Uinkaret volcanic field	https://azgs.arizona.edu/photo/vulcans-throne-uinkaret-volcanic-field-north-rim-grand-canyon
+            [
+                'name' => 'Summers - warm, dry, and mostly clear',
+                'source' => 'https://weatherspark.com/y/150311/Average-Weather-in-Crater-Lake-National-Park-Oregon-United-States-Year-Round#:~:text=In%20Crater%20Lake%20National%20Park%2C%20the%20summers%20are%20warm%2C%20dry,or%20above%2094%C2%B0F.'
+            ],
             [
                 'name' => 'Tectonic Hotspot.',
                 'source' => 'https://homework.study.com/explanation/what-is-the-plate-tectonic-setting-of-yellowstone-national-park.html#:~:text=The%20plate%20tectonic%20setting%20of%20Yellowstone%20National%20Park%20is%20a,it%2C%20creating%20a%20magma%20plume.'
@@ -878,7 +895,7 @@ class TypeSeeder extends Seeder
                 'source' => 'https://www.climatestotravel.com/climate/united-states/death-valley'
             ],
             //Winters -  semi-arid with mild	https://www.nps.gov/wica/planyourvisit/weather.htm#:~:text=Generally%2C%20the%20climate%20is%20semi,because%20of%20two%20weather%20patterns.
-            //Winters -  very cold, snowy, and partly cloudy.	https://weatherspark.com/y/150311/Average-Weather-in-Crater-Lake-National-Park-Oregon-United-States-Year-Round#:~:text=In%20Crater%20Lake%20National%20Park%2C%20the%20summers%20are%20warm%2C%20dry,or%20above%2094%C2%B0F.
+            //Winters - very cold, snowy, and partly cloudy.	https://weatherspark.com/y/150311/Average-Weather-in-Crater-Lake-National-Park-Oregon-United-States-Year-Round#:~:text=In%20Crater%20Lake%20National%20Park%2C%20the%20summers%20are%20warm%2C%20dry,or%20above%2094%C2%B0F.
             //Winters - are freezing, snowy, and partly cloudy.	https://weatherspark.com/y/2486/Average-Weather-in-Grand-Canyon-Arizona-United-States-Year-Round#:~:text=In%20Grand%20Canyon%2C%20the%20summers,or%20above%2091%C2%B0F.
             //Winters - freezing, snowy, and partly cloudy.	https://weatherspark.com/y/150294/Average-Weather-in-Yellowstone-National-Park-Wyoming-United-States-Year-Round#:~:text=In%20Yellowstone%20National%20Park%2C%20the,or%20above%2084%C2%B0F.
             //Winters - very cold and wet, and partly cloudy	https://weatherspark.com/y/10211/Average-Weather-in-Hot-Springs-National-Park-Arkansas-United-States-Year-Round#:~:text=In%20Hot%20Springs%20National%20Park%2C%20the%20summers%20are%20hot%20and,or%20above%2099%C2%B0F.
@@ -890,7 +907,7 @@ class TypeSeeder extends Seeder
                 'source' => 'https://www.nps.gov/wica/planyourvisit/weather.htm#:~:text=Generally%2C%20the%20climate%20is%20semi,because%20of%20two%20weather%20patterns.'
             ],
             [
-                'name' => 'Winters -  very cold, snowy, and partly cloudy.',
+                'name' => 'Winters - very cold, snowy, and partly cloudy.',
                 'source' => 'https://weatherspark.com/y/150311/Average-Weather-in-Crater-Lake-National-Park-Oregon-United-States-Year-Round#:~:text=In%20Crater%20Lake%20National%20Park%2C%20the%20summers%20are%20warm%2C%20dry,or%20above%2094%C2%B0F.'
             ],
             [
@@ -904,6 +921,18 @@ class TypeSeeder extends Seeder
             [
                 'name' => 'Winters - very cold and wet, and partly cloudy',
                 'source' => 'https://weatherspark.com/y/10211/Average-Weather-in-Hot-Springs-National-Park-Arkansas-United-States-Year-Round#:~:text=In%20Hot%20Springs%20National%20Park%2C%20the%20summers%20are%20hot%20and,or%20above%2099%C2%B0F.'
+            ],
+            [
+                'name' => 'Yellowstone Caldera',
+                'source' => 'https://www.yellowstoneparknet.com/mountains/'
+            ],
+            [
+                'name' => 'Yellowstone River',
+                'source' => 'https://www.nps.gov/yell/learn/nature/water.htm'
+            ],
+            [
+                'name' => 'Zinc',
+                'source' => 'https://www.sabinocanyon.com/what-minerals-are-found-in-the-rocky-mountains/'
             ],
         ];
 

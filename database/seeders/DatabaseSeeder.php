@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
             PlaceSeeder::class,
             FeatureSeeder::class,
             TypeSeeder::class,
+            FeatureTypeSeeder::class,
+            PlaceTypeSeeder::class,
         ]);
     }
 }

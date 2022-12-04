@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('feature_type', function (Blueprint $table) {
+        Schema::create('place_type', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('feature_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('place_id')->constrained()->cascadeOnDelete();
             $table->foreignId('type_id')->constrained()->cascadeOnDelete();
-            $table->unique(['feature_id', 'type_id']);
+            $table->unique(['place_id', 'type_id']);
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('feature_type');
+        Schema::dropIfExists('place_feature');
     }
 };
