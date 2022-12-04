@@ -1,0 +1,15 @@
+id: 39381
+name: letsGeo
+environments:
+  production:
+    database: letsGeo
+    memory: 1024
+    cli-memory: 512
+    runtime: 'php-8.1:al2'
+    build:
+      - 'composer install --no-dev'
+      - 'php artisan event:cache'
+      # - 'npm ci && npm run build && rm -rf node_modules'
+    deploy:
+      - 'php artisan migrate:fresh --force'
+      - 'php artisan db:seed --force'
