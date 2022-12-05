@@ -56,6 +56,10 @@ class QuestionController extends Controller
         $user = auth()->user();
         $place = Place::find($id)->load('types.features');
         $features = $place->types->pluck('features')->flatten()->unique('id')->values()->sortBy('name');
+        // only keep feature's types that matches with the place's types
+        $features->each(function ($feature) use ($place) {
+            $feature->types = $feature->types->intersect($place->types);
+        });
         // get place types that match user types
         $matchedTypes = $place->types->intersect($user->types);
         $matchedFeatures = $this->getFeaturesAndTypes($user, $matchedTypes)->sortBy('name');
